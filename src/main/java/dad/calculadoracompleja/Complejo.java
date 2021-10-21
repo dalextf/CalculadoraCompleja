@@ -7,13 +7,6 @@ public class Complejo {
     private DoubleProperty real = new SimpleDoubleProperty();
     private DoubleProperty imagin = new SimpleDoubleProperty();
 
-    public Complejo add(Complejo c) {
-        Complejo r = new Complejo();
-        r.realProperty().bind(real.add(c.realProperty()));
-        r.imaginProperty().bind(imagin.add(c.imaginProperty()));
-        return r;
-    }
-
 
     @Override
     public String toString() {
